@@ -1,0 +1,970 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/coronavirusinfection#"
+     xml:base="http://www.semanticweb.org/coronavirusinfection"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/coronavirusinfection"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#co-worker -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#co-worker">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasRelationships"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/coronavirusinfection#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/coronavirusinfection#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#contractedVirusFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#contractedVirusFrom">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#passedVirusTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasAunt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasAunt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#kinswoman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasBrother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasBrother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasSibling"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#kinsman"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/coronavirusinfection#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasChild">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasFamilyMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasCloseRelationship -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasCloseRelationship">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasRelationships"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasCousin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasCousin">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasFamilyMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasDiognosis -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasDiognosis">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#isDiagnosisOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/coronavirusinfection#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/coronavirusinfection#COVID-19Diagnosis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasFamilyMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasFamilyMember">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasRelationships"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasGender -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasGender">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasHusband -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasHusband">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#spouse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasNeighbor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasNeighbor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasRelationships"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasNephew -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasNephew">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#kinsman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasNiece -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasNiece">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#kinswoman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasParent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasFamilyMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasRelationships -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasRelationships">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasSibling -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasSibling">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasFamilyMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasSister -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasSister">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasSibling"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#kinswoman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasSpouse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasSpouse">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasFamilyMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasSymptom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasTestResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasTestResult">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#isTestResultFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasUncle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasUncle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#kinsman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#hasWife -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#hasWife">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#spouse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#isDiagnosisOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#isDiagnosisOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#isTestResultFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#isTestResultFor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#kinsman -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#kinsman">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasRelationships"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#kinswoman -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#kinswoman">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasRelationships"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#passedVirusTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#passedVirusTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/coronavirusinfection#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/coronavirusinfection#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#spouse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#spouse">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasCloseRelationship"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasRelationships"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#spouse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#status -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#status">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/coronavirusinfection#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/coronavirusinfection#Status"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#suspectedReasonsBehindCatchingCOVID-19 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/coronavirusinfection#suspectedReasonsBehindCatchingCOVID-19">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/coronavirusinfection#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/coronavirusinfection#ExposureToCOVID-19"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#COVID-19Diagnosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#COVID-19Diagnosis"/>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#CloseContact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#CloseContact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#ExposureToCOVID-19"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#ContactWithHealthWorkers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#ContactWithHealthWorkers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#ExposureToCOVID-19"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#DiagnosedWithCOVID-19 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#DiagnosedWithCOVID-19">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/coronavirusinfection#Patient"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasDiognosis"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/coronavirusinfection#COVID-19Diagnosis"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#Doctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#HealthCareProfessional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#ExposureToCOVID-19 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#ExposureToCOVID-19"/>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#GenderType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#GenderType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/coronavirusinfection#Female"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/coronavirusinfection#Male"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#HealthCareProfessional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#HealthCareProfessional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedBrother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedBrother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#InfectedFamilyMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedCo-Worker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedCo-Worker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#InfectedViaJob"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedCo-passenger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedCo-passenger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#ExposureToCOVID-19"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedCousin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedCousin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#InfectedFamilyMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedDaughter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedDaughter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#InfectedFamilyMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedFamilyMember -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedFamilyMember">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#ExposureToCOVID-19"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedFather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedFather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#InfectedFamilyMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedMother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedMother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#InfectedFamilyMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedNeighbor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedNeighbor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#ExposureToCOVID-19"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedNephew -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedNephew">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#InfectedFamilyMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedNiece -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedNiece">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#InfectedFamilyMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedRoomMate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedRoomMate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#ExposureToCOVID-19"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedSister -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedSister">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#InfectedFamilyMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedSon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedSon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#InfectedFamilyMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedSpouse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedSpouse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#InfectedFamilyMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedViaHealthcareWork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedViaHealthcareWork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#InfectedViaJob"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#InfectedViaJob -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#InfectedViaJob">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#ExposureToCOVID-19"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Man -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#Man">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/coronavirusinfection#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasGender"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/coronavirusinfection#Male"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#MildCOVID-19 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#MildCOVID-19">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#COVID-19Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#ModerateCOVID-19 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#ModerateCOVID-19">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#COVID-19Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Negative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#Negative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#TestResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Nurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#Nurse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#HealthCareProfessional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasDiognosis"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/coronavirusinfection#COVID-19Diagnosis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Positive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#Positive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#TestResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#SecondaryContact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#SecondaryContact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#ExposureToCOVID-19"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#SevereCOVID-19 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#SevereCOVID-19">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#COVID-19Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#Status">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/coronavirusinfection#Cured"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/coronavirusinfection#Deceased"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/coronavirusinfection#Hospitalized"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Symptoms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#TestResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#TestResult">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/coronavirusinfection#Negative"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/coronavirusinfection#Positive"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#UntestedForCOVID-19 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#UntestedForCOVID-19">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/coronavirusinfection#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasTestResult"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/coronavirusinfection#Negative"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#UrgentlyNeedsCovidTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#UrgentlyNeedsCovidTest">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/coronavirusinfection#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasCloseRelationship"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/coronavirusinfection#COVID-19Diagnosis"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasTestResult"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/coronavirusinfection#Positive"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#WeakeningDiseases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#WeakeningDiseases"/>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Woman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/coronavirusinfection#Woman">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/coronavirusinfection#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/coronavirusinfection#hasGender"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/coronavirusinfection#Female"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/coronavirusinfection#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Breathlessness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#Breathlessness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Cough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#Cough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Cured -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#Cured">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Status"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Deceased -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#Deceased">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Status"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Diarrhea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#Diarrhea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#DryCough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#DryCough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#FeelingTired -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#FeelingTired">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Female -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#Female"/>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Fever -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#Fever">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#GeneralizedAchesAndPains -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#GeneralizedAchesAndPains">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#HackingCough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#HackingCough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Hospitalized -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#Hospitalized">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Status"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Male -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#Male"/>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#NasalCongestion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#NasalCongestion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Negative -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#Negative"/>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#NoseRunning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#NoseRunning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Pain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#Pain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#PainInThroat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#PainInThroat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Pneumonia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#Pneumonia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Positive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#Positive"/>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#SeverePneumonia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#SeverePneumonia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Sneezing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#Sneezing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#UpperRespiratoryTractInfection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#UpperRespiratoryTractInfection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#AcuteRespiratoryDistressSyndrom(ARDS) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#AcuteRespiratoryDistressSyndrom(ARDS)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#WeakeningDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#CardiovascularDisease(CVD) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#CardiovascularDisease(CVD)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#WeakeningDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#ChronicKidneyDisease(CKD) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#ChronicKidneyDisease(CKD)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#WeakeningDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#ChronicKidneyInsufficiency(CKI) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#ChronicKidneyInsufficiency(CKI)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#WeakeningDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#ChronicLiverDisease(CLD) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#ChronicLiverDisease(CLD)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#WeakeningDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#ChronicObstructivePulmonaryDisease(COPD) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#ChronicObstructivePulmonaryDisease(COPD)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#WeakeningDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#DiabetesMellitus(DM) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#DiabetesMellitus(DM)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#WeakeningDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#Hypertension(HTN) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#Hypertension(HTN)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#WeakeningDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/coronavirusinfection#IschemicHeartDisease(IHD) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/coronavirusinfection#IschemicHeartDisease(IHD)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/coronavirusinfection#WeakeningDiseases"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
