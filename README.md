@@ -7,7 +7,8 @@ For the past 10 months the world has been suffering from thisepidemic that is ta
 - Olfa Ben Amar
 - Mehdi Gannem
 - [Sassi Ghaith](https://github.com/ghaithsassi)
-
+## Ontology Graph
+![Ontology Graph](graph.png) 
 ## Licence
 See the [LICENSE](https://github.com/ghaithsassi/IA301-ONTOLOGY-SYMBOLIC_AI/blob/master/LICENSE.md) file for license rights and limitations (MIT).
 
